@@ -1,0 +1,133 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	background-color: lightgray;
+}
+/* global */
+.container {
+	margin: auto;
+	overflow: hidden;
+}
+
+.btn {
+	border: none;
+	padding: 10px 20px;
+	background-color: coral;
+	color: white;
+}
+.inp {
+	padding: 10px 20px;
+    outline: none;
+    width: 350px;
+}
+
+/* header */
+header {
+	/* padding: 20px; */
+	background-color: #354240;
+	color: white;
+	border-bottom: coral 5px solid;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header .title {
+	float: left;
+	margin: 0;
+}
+
+header .nav {
+	float: right;
+}
+
+header .nav ul li {
+	float: left;
+	margin-top: 20px;
+	padding-left: 30px;
+}
+header .nav ul li :hover {
+	color: white;
+	font-size: 17px;
+}
+header h1 span {
+	color: coral;
+	font-weight: bold;
+}
+
+header .current a {
+	color: coral;
+}
+
+/* show case area */
+.showcase h3 {
+	margin: 0;
+	font-size: 50px;
+	font-weight: bolder;
+	padding-top: 50px;
+	text-shadow: grey 5px 3px;
+}
+.showcase {
+	min-height: 500px;
+	background-image: url("https://etimg.etb2bimg.com/photo/91435702.cms");
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+}
+
+/* newletter */
+
+.newsletter {
+	background-color: #354240;
+	padding: 30px;
+}
+.newsletter h1 {
+	padding: 0;
+	margin: 0;
+	float: left;
+	color: white;
+	margin-top: 5px;
+	font-size: 23px;
+}
+
+.newsletter .input {
+	float: right;
+}
+
+/* boxes */
+
+.boxes .box {
+	float: left;
+	box-sizing: border-box;
+	padding: 20px;
+    width: 30%;
+}
+.box {
+    text-align: center;
+}
+.box img {
+	width: 150px;
+	border-radius: 10px;
+}
+
+/* footer */
+
+.fotter p {
+    background-color: coral;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
