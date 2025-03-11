@@ -20,8 +20,8 @@ body {
 }
 .inp {
 	padding: 10px 20px;
-    outline: none;
-    width: 350px;
+	outline: none;
+	width: 250px;
 }
 
 /* header */
@@ -56,7 +56,7 @@ header .nav {
 
 header .nav ul li {
 	float: left;
-	margin-top: 20px;
+	margin-top: 30px;
 	padding-left: 30px;
 }
 header .nav ul li :hover {
@@ -113,22 +113,86 @@ header .current a {
 	float: left;
 	box-sizing: border-box;
 	padding: 20px;
-    width: 30%;
+	width: 30%;
 }
 .box {
-    text-align: center;
+	text-align: center;
 }
 .box img {
 	width: 150px;
 	border-radius: 10px;
 }
 
+/* about */
+.about {
+	float: left;
+	width: 60%;
+}
+.aside {
+	float: right;
+	width: 35%;
+	background-color: black;
+	color: white;
+	margin: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
 /* footer */
 
 .fotter p {
-    background-color: coral;
-    color: white;
-    padding: 20px;
-    text-align: center;
+	background-color: coral;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+.fotter a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
 
+/* mediaquries for mobiles on;y*/
+
+@media (max-width: 768px) {
+	.title h1,
+	.nav, 
+	.newsletter,
+	.boxes .box,
+	.about, 
+	.aside {
+		float: none;
+		text-align: center;
+	}
+
+	.nav {
+		margin-bottom: 10px;
+	}
+
+	/* showcase */
+	.showcase {
+		min-height: 170px;
+		background-image: url("https://etimg.etb2bimg.com/photo/91435702.cms");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+	.showcase h3 {
+		display: none;
+	}
+
+	/* newsletter */
+	.newsletter h1 {
+		font-size: 20px;
+	}
+	 .btn, .inp {
+		width: 100%;
+		margin: 10px;
+	 }
+	 /* boxes */
+	 .boxes .box,
+	 .about,
+	 .aside {
+		width: 100%;
+	 }
 }
