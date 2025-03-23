@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: white;
+}
+.container {
+	width: 80%;
+	min-width: 1100px;
+	margin: auto;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.main-menu ul {
+	display: flex;
+	list-style: none;
+}
+.main-menu .left-menu {
+	flex: 1;
+	margin-left: 20px;
+}
+.main-menu ul li {
+	padding: 0 15px;
+}
+.main-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 70px;
+}
+.main-menu ul li a:hover {
+	border-bottom: 2px solid black;
+}
+.main-menu ul li a {
+	padding-bottom: 3px;
+}
+/* showcase */
+.showcase {
+	background: url("https://www.techguide.com.au/wp-content/uploads/2015/07/HP2015showcase8.jpg")
+		no-repeat center center/cover;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: end;
+}
+.btn {
+	background-color: black;
+	color: white;
+	padding: 15px 25px;
+	font-size: 18px;
+}
+
+/* showcase cards */
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	padding: 50px 0;
+}
+.cards .card img {
+	width: 100%;
+	background-size: contain;
+	border-radius: 15px;
+}
+
+.card h1 {
+	padding: 20px 0;
+}
+.card a {
+	color: blue;
+	text-transform: uppercase;
+}
+.card p {
+	padding-bottom: 10px;
+}
+
+.card a:hover i {
+	margin-left: 15px;
+}
+
+/* xbox */
+
+.xbox {
+	height: 450px;
+	background: url("https://assetsio.gnwcdn.com/xbox-game-pass-for-pc.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp")
+		no-repeat center center/cover;
+
+}
+
+.xbox > div {
+	width: 40%;
+	padding: 100px 0 0 30px;
+}
+
+.last {
+	height: 500px;
+	background: url("https://media.istockphoto.com/id/155288168/photo/max-patch-sunset.jpg?s=612x612&w=0&k=20&c=kS0FyNaQguD3PhpYnvfl6SbYtJw0CiItKDxx5lDxGU4=") no-repeat center center/cover;
+    color: white;
+}
+
+.last >div {
+	padding: 100px 0 0 30px;
+	width: 50%;
+}
+.last p,
+.xbox p,
+.showcase p {
+	padding: 30px 0;
+
+}
+
+/* follow */
+.follow {
+	display: flex;
+	padding: 20px 0;
+}
+.follow * {
+	margin-left: 15px;
+	font-size: 25px;
+}
+
+/* links */
+
+.links {
+	background-color: lightgrey;
+	color: black;
+	padding: 20px;
+}
+.links > div {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.links .link ul {
+	list-style: none;
+	padding: 10px;
+}
+
+.links .link ul li a:hover {
+	cursor: pointer;
+}
