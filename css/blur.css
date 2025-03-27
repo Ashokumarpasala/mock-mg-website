@@ -1,0 +1,49 @@
+.body {
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.showcase::after {
+  content: "";
+  background: url("../showcase.jpg") no-repeat center center/cover;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+.showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.showcase .content {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.showcase:hover .content {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: ease-in-out 2s;
+}
+.showcase .content p {
+    width: 50%;
+    text-align: center;
+}
+.content h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+.showcase img {
+    border-radius: 50%;
+}
