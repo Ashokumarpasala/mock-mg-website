@@ -92,7 +92,6 @@ a {
 	height: 450px;
 	background: url("https://assetsio.gnwcdn.com/xbox-game-pass-for-pc.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp")
 		no-repeat center center/cover;
-
 }
 
 .xbox > div {
@@ -102,11 +101,12 @@ a {
 
 .last {
 	height: 500px;
-	background: url("https://media.istockphoto.com/id/155288168/photo/max-patch-sunset.jpg?s=612x612&w=0&k=20&c=kS0FyNaQguD3PhpYnvfl6SbYtJw0CiItKDxx5lDxGU4=") no-repeat center center/cover;
-    color: white;
+	background: url("https://media.istockphoto.com/id/155288168/photo/max-patch-sunset.jpg?s=612x612&w=0&k=20&c=kS0FyNaQguD3PhpYnvfl6SbYtJw0CiItKDxx5lDxGU4=")
+		no-repeat center center/cover;
+	color: white;
 }
 
-.last >div {
+.last > div {
 	padding: 100px 0 0 30px;
 	width: 50%;
 }
@@ -114,7 +114,6 @@ a {
 .xbox p,
 .showcase p {
 	padding: 30px 0;
-
 }
 
 /* follow */
@@ -147,3 +146,109 @@ a {
 .links .link ul li a:hover {
 	cursor: pointer;
 }
+
+.footer {
+	border: 2px solid black;
+}
+
+/* media quries */
+/* Media Query for Tablets (Width: 700px and below) */
+@media (max-width: 700px) {
+	.container {
+		width: 100%;
+		min-width: unset;
+		padding: 10px;
+	}
+
+	.fa-bars {
+		position: absolute;
+		top: 25px;
+		right: 10px;
+	}
+
+	.main-menu img {
+		width: 80px;
+	}
+
+	.main-menu .left-menu {
+		flex-direction: column;
+		position: absolute;
+		background-color: aliceblue;
+		z-index: 2;
+		top: 0px;
+		height: 100%;
+		left: -20px;
+		width: 70%;
+		opacity: 0.9;
+		transform: translateX(-100%);
+		transition:  0.3s ease-in-out;
+
+	}
+
+	.main-menu .left-menu.show {
+		transform: translateX(0);
+	}
+
+	.main-menu .left-menu  {
+		padding: 30px;
+	}
+
+	.main-menu .left-menu  li{
+		padding: 20px;
+		border-bottom: 1px solid lightgrey;
+	}
+
+	.main-menu .right-menu  li a {
+		padding-right: 20px;
+	}
+.showcase {
+	background: url("https://www.techguide.com.au/wp-content/uploads/2015/07/HP2015showcase8.jpg")
+		no-repeat center center/contain;
+		height: 250px;
+	}
+
+	.showcase h1,
+	.showcase p {
+		display: none;
+	}
+
+	.btn {
+	padding: 10px 10px;
+	font-size: 13px;
+}
+.cards {
+	grid-template-columns: 1fr;
+}
+
+.xbox,
+.last {
+	background-size: contain;
+	height: 250px;
+}
+
+.xbox >div,
+.last > div {
+	width: 75%;
+	position: relative;
+	top: -70px;
+}
+
+.xbox p,
+.last p{
+	display: none;
+}
+
+.xbox h1,
+.last h1 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+ .links > div {
+	grid-template-columns: 1fr;
+ }
+
+	
+}
+
+/* Media Query for Mobile Devices (Width: 480px and below) */
+
