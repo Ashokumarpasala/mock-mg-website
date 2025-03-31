@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BG_Video</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			.video-container {
+				position: absolute;
+                z-index: -1;
+				width: 100%;
+				height: 100vh;
+				overflow: hidden;
+			}
+
+			.video-container video {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				object-fit: cover; /* Ensures video covers the entire container */
+			}
+            .showcase {
+                background-color: black;
+                width: 100%;
+                height: 100vh;
+                opacity: 0.75;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .showcase h1 {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 1.4rem;
+                width: 45%;
+                padding: 10px 0;
+            }
+            .btn {
+                padding: 10px 15px;
+                background-color: black;
+                border: 1px solid white;
+                border-radius: 10px;
+                color: white;
+                text-transform: uppercase;
+            }
+
+		</style>
+
+	</head>
+	<body>
+		<div class="video-container">
+			<video src="./rain.mp4" autoplay loop muted></video>
+		</div>
+		<div class="showcase">
+			<h1>Rain Starts NOW</h1>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+				iste accusamus aspernatur iure  reiciendis distinctio, rerum unde id obcaecati
+				excepturi aperiam nobis quasi!
+			</p>
+            <button class="btn">Explore Now</button>
+		</div>
+	</body>
+</html>
