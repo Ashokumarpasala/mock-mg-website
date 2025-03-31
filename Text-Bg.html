@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Text_BG Animation</title>
+		<style>
+			.container {
+				display: flex;
+				flex-direction: column;
+				height: 100vh;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+			}
+			.animated {
+				font-family: "Charm", cursive;
+				margin: 0;
+				padding: 0;
+				font-size: 6rem;
+				background: url("./bg.png") no-repeat;
+				background-clip: text;
+				-webkit-background-clip: text;
+				color: transparent;
+				animation: moveBG 5s linear infinite;
+				-webkit-animation: moveBG 5s linear infinite;
+			}
+			@keyframes moveBG {
+				0% {
+					background-position: 0% 30%;
+				}
+				100% {
+					background-position: 100% 50%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="animated">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+				necessitatibus harum dicta non, minima aliquam!
+			</h1>
+		</div>
+	</body>
+</html>
